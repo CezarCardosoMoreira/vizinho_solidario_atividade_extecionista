@@ -2,6 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Existing route
 Route::get('/', function () {
-    return view('welcome');
+    echo 'Hello, World!';
+});
+
+
+// New route added
+Route::get('/about', function () {
+    echo 'About Us';
 });
