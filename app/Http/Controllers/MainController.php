@@ -10,6 +10,6 @@ class MainController extends Controller
     //função index para retornar a view welcome
     public function index()
     {
-        return view('home');
+        return view('main');
     }
 }
