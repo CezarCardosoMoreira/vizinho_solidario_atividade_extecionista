@@ -2,13 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Existing route
-Route::get('/', function () {
-    echo 'Hello, World!';
-});
 
 
-// New route added
+// Route to MainController index method
+Route::get('/', [App\Http\Controllers\MainController::class, 'index']);
+
+// New route added about
 Route::get('/about', function () {
     echo 'About Us';
 });
+
+
