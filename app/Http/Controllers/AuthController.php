@@ -12,6 +12,14 @@ class AuthController extends Controller
         return view('login');
     }
 
+    public function loginSubmit(Request $request)
+    {
+        // Handle login submission
+        echo $request->input('email');
+        echo '<br>';
+        echo $request->input('senha');
+
+    }
     public function register(Request $request)
     {
         // Handle user registration
