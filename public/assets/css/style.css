@@ -75,3 +75,8 @@ h2 {
 .signup-option a:hover {
     text-decoration: underline;
 }
+
+.alert-danger {
+    color: rgb(224, 11, 11);
+    padding: 20px;
+}
