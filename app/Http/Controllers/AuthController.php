@@ -14,10 +14,19 @@ class AuthController extends Controller
 
     public function loginSubmit(Request $request)
     {
-        // Handle login submission
-        echo $request->input('email');
-        echo '<br>';
-        echo $request->input('senha');
+        // Validate and authenticate user
+        $request->validate([
+            'email' => 'required|email',
+            'senha' => 'required|',
+        ]);
+
+        //get user input
+        $email = $request->input('email');
+        $senha = $request->input('senha');
+
+        echo 'ok';
+        // Authentication logic here
+
 
     }
     public function register(Request $request)
