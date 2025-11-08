@@ -6,8 +6,8 @@
 
     <div class="login-container">
         <h2>Entrar na Conta</h2>
-        <form class="login-form" action="/seu-endpoint-de-login" method="POST">
-
+        <form class="login-form" action="/loginSubmit" method="POST">
+            @csrf
             <div class="input-group">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
