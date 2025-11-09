@@ -6,7 +6,7 @@
 
     <div class="login-container">
         <h2>Entrar na Conta</h2>
-        <form class="login-form" action="/loginSubmit" method="POST">
+        <form class="login-form" action="/loginSubmit" method="POST" >
             @csrf
             <div class="input-group">
                 <label for="email">E-mail:</label>
@@ -32,7 +32,7 @@
         </form>
 
         <div class="signup-option">
-            <p>Novo por aqui? <a href="/sua-pagina-de-cadastro">**Cadastre-se**</a></p>
+            <p>Novo por aqui? <a href="/cadastro">**Cadastre-se**</a></p>
         </div>
         <div>Vizinho Solidario  &copy;</div>
         {{-- Mensagem de erro --}}

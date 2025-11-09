@@ -17,7 +17,7 @@ class AuthController extends Controller
         // Validate and authenticate user
         $request->validate([
             'email' => 'required|email',
-            'senha' => 'required|',
+            'senha' => 'required|min:6|max:20',
         ]);
 
         //get user input
@@ -29,9 +29,29 @@ class AuthController extends Controller
 
 
     }
-    public function register(Request $request)
+    public function register()
     {
-        // Handle user registration
+        return view('cadastro');
+
+    }
+
+    public function registerSubmit(Request $request)
+    {
+        // Validate and register user
+        // Validate and authenticate user
+        $request->validate([
+            'nome' => 'required|string|max:255',
+            'email' => 'required|email',
+            'senha' => 'required|min:6|max:20',
+        ]);
+        //get user input
+        $nome = $request->input('nome');
+        $email = $request->input('email');
+        $senha = $request->input('senha');
+
+        echo 'ok';
+        // Authentication logic here
+
     }
 
     public function logout(Request $request)
