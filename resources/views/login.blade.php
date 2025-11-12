@@ -35,7 +35,7 @@
             <p>Novo por aqui? <a href="/cadastro">**Cadastre-se**</a></p>
         </div>
         <div>Vizinho Solidario  &copy;</div>
-        {{-- Mensagem de erro --}}
+
 
 
     </div>

@@ -16,7 +16,7 @@ Route::get('/about', function () {
 
 // Authentication routes
 Route::get('/login', [App\Http\Controllers\AuthController::class, 'login']);
-Route::post('/logout', [App\Http\Controllers\AuthController::class, 'logout']);
+Route::get('/logout', [App\Http\Controllers\AuthController::class, 'logout']);
 
 Route::get('/cadastro', [App\Http\Controllers\AuthController::class, 'register']);
 Route::post('/loginSubmit', [App\Http\Controllers\AuthController::class, 'loginSubmit']);
